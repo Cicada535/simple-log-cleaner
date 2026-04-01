@@ -7,17 +7,29 @@ from datetime import datetime
 import random
 from tkinter import messagebox
 
+if not getattr(sys, 'frozen', False):
+    tcl_dir = os.path.join(sys.base_prefix, 'tcl')
+    if os.path.exists(tcl_dir):
+        os.environ['TCL_LIBRARY'] = os.path.join(tcl_dir, 'tcl8.6')
+        os.environ['TK_LIBRARY'] = os.path.join(tcl_dir, 'tk8.6')
+else:
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(sys.executable))
+    os.environ['TCL_LIBRARY'] = os.path.join(base_path, 'tcl', 'tcl8.6')
+    os.environ['TK_LIBRARY'] = os.path.join(base_path, 'tcl', 'tk8.6')
+
+def get_path(relative_path):
+    if getattr(sys, 'frozen', False):
+        base = getattr(sys, '_MEIPASS', os.path.dirname(sys.executable))
+    else:
+        base = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(base, relative_path)
+
 class SimpleLogCleaner:
     def __init__(self, root):
         self.root = root
         self.root.title("Simple Log Cleaner")
         self.root.geometry("800x600")
-        if getattr(sys, 'frozen', False):
-            base_path = sys._MEIPASS if hasattr(sys, '_MEIPASS') else os.path.dirname(sys.executable)
-        else:
-            base_path = os.path.dirname(os.path.abspath(__file__))
-        icon_path = os.path.join(base_path, "images", "icon.png")
-        self.root.iconphoto(False, tk.PhotoImage(file=icon_path))
+        icon_path = get_path(os.path.join("images", "icon.png"))
         self.root.iconphoto(False, tk.PhotoImage(file=icon_path))
         self.filtered_content = ""
         self.dark_mode = True
