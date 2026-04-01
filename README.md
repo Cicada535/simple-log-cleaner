@@ -53,5 +53,43 @@ in project folder
 > - Empty parameters are ignored.
 > - If no file is selected, filtering will not be performed.
 
+## Roadmap
+- [x] GUI.
+- [x] Uploading `.log` / `.txt` files.
+- [x] Filtering by multiple criteria (`AND` logic).
+- [x] Displaying the result.
+- [x] Copy to clipboard.
+- [x] Save to file.
+- [x] Dark / light theme.
+- [x] Context menu + hotkeys.
+- [x] Example (`example.log` + random parameters from the list).
+- [ ] Add new filtering options:
+  - [ ] "Any match" mode (using `any` instead of `all`).
+  - [ ] Support for conditional logic (`OR`, `AND`, `CUSTOM`, etc.).
+  - [ ] Case-sensitive (toggle).
+- [ ] Progress bar.
+- [ ] Highlighting matches in the results.
+- [ ] Real-time hit counter (no pop-ups).
+- [ ] Drag & Drop a file.
+- [ ] Streaming processing of large files (>100 MB).
+- [ ] Removing duplicates (toggle).
+- [ ] Line limit (toggle).
+- [ ] Console mode.
+- [ ] Modularization:
+  - [ ] Plugin-based filter system.
+  - [ ] Configuration (`.json` / `.yaml`).
+- [ ] Logging system.
+- [ ] Filters via the UI (checkboxes, fields).
+- [ ] Search within the result.
+- [ ] Presetting:
+  - [ ] Saving filter sets (presets).
+  - [ ] Quick preset switching.
+  - [ ] Presets for:
+    - [ ] Minecraft.
+    - [ ] Server logs.
+    - [ ] System logs.
+- [ ] Field separation (timestamp, level, message).
+- [ ] Custom themes.
+
 ## License
 This project is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ru) license. See the [LICENSE](https://github.com/Cicada535/simple-log-cleaner/blob/master/LICENSE) file for details.
