@@ -69,7 +69,7 @@ in project folder
   - [ ] Case-sensitive (toggle).
 - [ ] Progress bar.
 - [ ] Highlighting matches in the results.
-- [ ] Real-time hit counter (no pop-ups).
+- [ ] Real-time match counter (no pop-ups).
 - [ ] Drag & Drop a file.
 - [ ] Streaming processing of large files (>100 MB).
 - [ ] Removing duplicates (toggle).
