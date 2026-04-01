@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, scrolledtext
 import os
+import sys
 import pyperclip
 from datetime import datetime
 import random
@@ -11,7 +12,9 @@ class SimpleLogCleaner:
         self.root = root
         self.root.title("Simple Log Cleaner")
         self.root.geometry("800x600")
-        self.root.iconphoto(False, tk.PhotoImage(file=os.path.join(os.path.dirname(os.path.abspath(__file__)), "images", "icon.png")))
+        base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+        icon_path = os.path.join(base_path, "images", "icon.png")
+        self.root.iconphoto(False, tk.PhotoImage(file=icon_path))
         self.filtered_content = ""
         self.dark_mode = True
         
