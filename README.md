@@ -11,10 +11,10 @@ The utility for filtering log files based on specified strings.
 - Built-in example.
 - Dark / light theme.
 - Keyboard shortcuts:
-  - `Ctrl+C` - copy
-  - `Ctrl+V` - paste
-  - `Ctrl+X` - cut
-  - `Ctrl+A` - select all
+  - `Ctrl+C` - copy.
+  - `Ctrl+V` - paste.
+  - `Ctrl+X` - cut.
+  - `Ctrl+A` - select all.
 
 ## Gallery
 <img title="Light theme" src="/images/overview/light_theme.png" width="300"> <img title="Dark theme" src="/images/overview/dark_theme.png" width="300"> <img title="One-line query" src="/images/overview/one-line_query.png" width="300"> <img title="Multi-line query" src="/images/overview/multi-line_query.png" width="300"> <img title="Context menu (input field)" src="/images/overview/context_menu_(input_field).png" width="300"> <img title="Context menu (output field)" src="/images/overview/context_menu_(output_field).png" width="300">
