@@ -84,12 +84,12 @@ in project folder
 - [ ] Presetting:
   - [ ] Saving filter sets (presets).
   - [ ] Quick preset switching.
+  - [ ] Custom themes.
   - [ ] Presets for:
     - [ ] Minecraft.
     - [ ] Server logs.
     - [ ] System logs.
 - [ ] Field separation (timestamp, level, message).
-- [ ] Custom themes.
 
 ## License
 This project is licensed under the [Attribution-NonCommercial-NoDerivatives 4.0 International](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.ru) license. See the [LICENSE](https://github.com/Cicada535/simple-log-cleaner/blob/master/LICENSE) file for details.
