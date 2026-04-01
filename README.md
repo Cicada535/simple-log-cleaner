@@ -1,1 +1,1 @@
-# simple-log-cleaner
+# Simple Log Cleaner
