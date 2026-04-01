@@ -46,7 +46,7 @@ or use
 ```
 pip install -r requirements.txt
 ```
-in project folder
+in project folder.
 
 > [!NOTE]
 > - The file is read in UTF-8 (errors are ignored).
